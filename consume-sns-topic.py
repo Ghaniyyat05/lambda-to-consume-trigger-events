@@ -1,7 +1,7 @@
 import json
 
 def lambda_handler(event, context):
-    # Log the received event
+    # Log the received event 
     print("Received event: " + json.dumps(event, indent=2))
     
     # Iterate over SNS records
