@@ -4,7 +4,7 @@ def lambda_handler(event, context):
     # Log the received event 
     print("Received event: " + json.dumps(event, indent=2))
     
-    # Iterate over SNS records
+    # Iterate over SNS records 
     for record in event['Records']:
         sns_message = record['Sns']['Message']
         sns_subject = record['Sns']['Subject']
